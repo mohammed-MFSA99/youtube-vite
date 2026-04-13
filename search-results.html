@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
-    <title>يوتيوبي - سجل المشاهدة</title>
+    <title>يوتيوبي - نتائج البحث</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -141,71 +141,98 @@
     </div>
     <div class="container">
       <div class="mt-5 mb-4 d-inline-block"></div>
-      <div class="row">
-        <div class="col-lg-3 history-right-column">
-          <input
-            type="text"
-            type="search"
-            placeholder="ابحث في النتائج"
-            class="form-control my-3 border-0"
-          />
-          <hr />
-          <label class="mb-2">نوع السجل:</label>
-          <div class="list-group list-group-flush pe-0" id="list-tab">
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action active"
-              data-bs-toggle="list"
-              >سجل المشاهدة</a
-            >
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              >سجل البحث</a
-            >
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              >التعليقات</a
-            >
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              >المنتدى</a
-            >
-          </div>
-          <label class="mb-2 mt-4">التاريخ:</label>
-          <div class="list-group list-group-flush pe-0" id="list-tab">
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action active"
-              data-bs-toggle="list"
-              >منذ 24 ساعة</a
-            >
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              >منذ 3 أيام</a
-            >
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              >منذ أسبوع</a
-            >
-            <a
-              href="#list-home"
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              >منذ شهر</a
-            >
-          </div>
+      <div class="row mb-4">
+        <div class="col-6">حوالي 800 نتيجة</div>
+        <div class="col-6">
+          <span role="button" class="float-end" id="search-filter-icon"
+            ><i class="bi bi-funnel"></i> تصفية</span
+          >
         </div>
-        <div class="col-lg-9 pt-5 pt-lg-0">
+      </div>
+      <div class="row mt-4 filter-row mb-3">
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">تاريخ التحميل</div>
+          <hr />
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1" />
+            <span>آخر ساعة</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1" />
+            <span>اليوم</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1" />
+            <span>هذا الأسبوع</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1" />
+            <span>هذا الشهر</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g1" />
+            <span>هذا العام</span>
+          </label>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">النوع</div>
+          <hr />
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2" />
+            <span>فيديو</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2" />
+            <span>قناة</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2" />
+            <span>قائمة تشغيل</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2" />
+            <span>فيلم</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g2" />
+            <span>عرض</span>
+          </label>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">التصنيف بحسب</div>
+          <hr />
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3" />
+            <span>مدى الصلة</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3" />
+            <span>تاريخ التحميل</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3" />
+            <span>عدد المشاهدات</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g3" />
+            <span>التقييم</span>
+          </label>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="text-center">المدة</div>
+          <hr />
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g4" />
+            <span>قصير (أقل من أربع دقائق)</span>
+          </label>
+          <label class="d-block mb-3">
+            <input type="checkbox" name="g4" />
+            <span>طويل (أكثير من أربع دقائق)</span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
           <div class="card mb-3">
             <div class="card-horizontal d-md-flex d-block">
               <div class="col-md-5 col-xl-4 position-relative overflow-hidden">
@@ -219,7 +246,6 @@
                   <i class="bi bi-play-fill"></i>
                   <i class="bi bi-clock watch-later"></i>
                 </a>
-                <i class="bi bi-x-lg remove fs-5"></i>
               </div>
               <div class="col-md-7 col-xl-8 card-body">
                 <a href="watch.html"
@@ -260,7 +286,6 @@
                   <i class="bi bi-play-fill"></i>
                   <i class="bi bi-clock watch-later"></i>
                 </a>
-                <i class="bi bi-x-lg remove fs-5"></i>
               </div>
               <div class="col-md-7 col-xl-8 card-body">
                 <a href="watch.html"
@@ -300,7 +325,6 @@
                   <i class="bi bi-play-fill"></i>
                   <i class="bi bi-clock watch-later"></i>
                 </a>
-                <i class="bi bi-x-lg remove fs-5"></i>
               </div>
               <div class="col-md-7 col-xl-8 card-body">
                 <a href="watch.html"
@@ -342,7 +366,6 @@
                   <i class="bi bi-play-fill"></i>
                   <i class="bi bi-clock watch-later"></i>
                 </a>
-                <i class="bi bi-x-lg remove fs-5"></i>
               </div>
               <div class="col-md-7 col-xl-8 card-body">
                 <a href="watch.html"
@@ -382,7 +405,6 @@
                   <i class="bi bi-play-fill"></i>
                   <i class="bi bi-clock watch-later"></i>
                 </a>
-                <i class="bi bi-x-lg remove fs-5"></i>
               </div>
               <div class="col-md-7 col-xl-8 card-body">
                 <a href="watch.html"
@@ -413,6 +435,6 @@
         </div>
       </div>
     </div>
-    <script src="src/js/history-log.js"></script>
+    <script type="module" src="src/js/search-results.js"></script>
   </body>
 </html>

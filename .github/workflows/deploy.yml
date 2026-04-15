@@ -1,4 +1,5 @@
 name: Build and Deploy vite
+
 on:
   push:
     branches:
@@ -25,14 +26,12 @@ jobs:
         with:
           path: dist
 
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
-   environment:
+    environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - id: deployment 
+      - id: deployment
         uses: actions/deploy-pages@v4
-

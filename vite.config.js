@@ -3,7 +3,7 @@ import { resolve } from "path";
 import { Channel } from "diagnostics_channel";
 
 export default defineConfig({
-  base: "./youtube-vite/",
+  base: "/youtube-vite/",
   build: {
     rollupOptions: {
       input: {

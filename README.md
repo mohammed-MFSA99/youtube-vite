@@ -35,6 +35,8 @@ The project simulates a modern video streaming platform with **8 interconnected 
 - **Watch History Page (`history-log.html`):** Includes a sidebar filter (by history type and timeframe) and interactive delete buttons (`.remove`) to remove individual videos from the watch history DOM.
 - **Authentication Pages:** Clean, centered card layouts for **Login** (`login.html`), **Sign Up** (`signup.html`), and **Password Recovery** (`forget-my-password.html`).
 
+---
+
 ### 🛠️ Technologies
 - **HTML5** (Semantic elements, `<video>`, `<track>` VTT captions)
 - **CSS3** (Custom styling & responsive overrides)

@@ -11,7 +11,7 @@ A responsive, multi-page Arabic (RTL) video-sharing platform interface inspired 
 The project simulates a modern video streaming platform with **8 interconnected pages**, combining **Bootstrap 5.3 RTL** components (Offcanvas sidebar, Tabbed lists, Horizontal & Vertical Cards, Dropdowns, and Ratios) with modular **JavaScript** to handle interactive UI behaviors such as search filters, expandable video descriptions, nested comment replies, and watch history management.
 
 ### 🚀 Live Demo
-[View Live Demo](https://mohammed-MFSA99.github.io/youtube-frontend/) 
+[View Live Demo](https://mohammed-mfsa99.github.io/youtube-vite/) 
 
 ### 📸 Screenshots
 * **Home Page (Desktop View)**
